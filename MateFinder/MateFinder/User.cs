@@ -14,7 +14,7 @@ namespace MateFinder
         private string _lastName;
         private string _email;
         private int _phone;
-        private string[] _games;
+        private Game[] _games;
         private string _password;
         private string _country;
         private string _state;
@@ -28,7 +28,7 @@ namespace MateFinder
         public string lastName { get => _lastName; set => _lastName = value; }
         public string email { get => _email; set => _email = value; }
         public int phone { get => _phone; set => _phone = value; }
-        public string[] games { get => _games; set => _games = value; }
+        public Game[] games { get => _games; set => _games = value; }
         public string password { get => _password; set => _password = value; }
         public string country { get => _country; set => _country = value; }
         public string state { get => _state; set => _state = value; }

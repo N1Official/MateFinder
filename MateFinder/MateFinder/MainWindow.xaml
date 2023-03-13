@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:MateFinder"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Background="#FF4D4545">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Mate Finder" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom" Foreground="White" FontSize="72" FontWeight="Normal" FontFamily="Arial Black"/>
+        <Button Content="Belépés" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Center" Background="#FF999999" FontSize="24" FontFamily="Arial Black" Foreground="White" BorderThickness="3,3,3,3"/>
+        <Button Content="Regisztráció" HorizontalAlignment="Center" Margin="0,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Background="#FF999999" FontSize="24" FontFamily="Arial Black" Foreground="White" BorderThickness="3,3,3,3"/>
+        <Button Content="Kilépés" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Center" Background="#FF999999" FontSize="24" FontFamily="Arial Black" Foreground="White" BorderThickness="3,3,3,3"/>
     </Grid>
 </Window>

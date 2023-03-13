@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\MateFinder.csproj": {}
+    "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\MateFinder\\MateFinder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\MateFinder.csproj": {
+    "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\MateFinder\\MateFinder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\MateFinder.csproj",
+        "projectUniqueName": "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\MateFinder\\MateFinder.csproj",
         "projectName": "MateFinder",
-        "projectPath": "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\MateFinder.csproj",
+        "projectPath": "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\MateFinder\\MateFinder.csproj",
         "packagesPath": "C:\\Users\\Suli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\obj\\",
+        "outputPath": "C:\\Users\\Suli\\Desktop\\MateFinder\\MateFinder\\MateFinder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
