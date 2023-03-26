@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('game_category', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('gameCategory', function (Blueprint $table) {
+            $table->foreignId("game_id")->references('id')->on('game');
+            $table->foreignId("category_id");
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('game_category');
+        Schema::dropIfExists('gameCategory');
     }
 };

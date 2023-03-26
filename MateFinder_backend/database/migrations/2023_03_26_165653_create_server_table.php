@@ -15,7 +15,9 @@ return new class extends Migration
     {
         Schema::create('server', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId("game_id");
+                  
+            $table->string("name");
         });
     }
 

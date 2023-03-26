@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('game_rank', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('gameRank', function (Blueprint $table) {
+            $table->foreignId("rank_id");
+            $table->foreignId("game_id");
+            $table->integer("order");
         });
     }
 
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('game_rank');
+        Schema::dropIfExists('gameRank');
     }
 };
