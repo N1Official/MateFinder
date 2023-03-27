@@ -16,7 +16,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Label Content="Mate Finder" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom" Foreground="White" FontSize="72" FontWeight="Normal" FontFamily="Cooper Black"/>
-        <Button Content="Belépés" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Center" Background="#FF999999" FontSize="24" FontFamily="Arial Black" Foreground="White" BorderThickness="3,3,3,3" Click="Button_Click"/>
+        <Button Content="Belépés" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Center" Background="#FF999999" FontSize="24" FontFamily="Arial Black" Foreground="White" BorderThickness="3,3,3,3" Click="log_Click"/>
         <Button Content="Regisztráció" HorizontalAlignment="Center" Margin="0,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Background="#FF999999" FontSize="24" FontFamily="Arial Black" Foreground="White" BorderThickness="3,3,3,3" Click="reg_Click"/>
         <Button Content="Kilépés" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Center" Background="#FF999999" FontSize="24" FontFamily="Arial Black" Foreground="White" BorderThickness="3,3,3,3" Click="exit_Click"/>
     </Grid>

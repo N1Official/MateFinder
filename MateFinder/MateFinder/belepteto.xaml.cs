@@ -35,7 +35,7 @@ namespace MateFinder
             System.Diagnostics.Process.Start("https://www.facebook.com");
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void log_Click(object sender, RoutedEventArgs e)
         {
 
         }
