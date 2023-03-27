@@ -16,13 +16,28 @@ using System.Windows.Shapes;
 namespace MateFinder
 {
     /// <summary>
-    /// Interaction logic for belepteto.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class belepteto : Page
+    public partial class MainWindow : Window
     {
-        public belepteto()
+        public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void reg_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com");
+        }
+
+        private void log_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
