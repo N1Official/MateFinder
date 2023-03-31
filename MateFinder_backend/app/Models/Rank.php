@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rank extends Model
 {
+    protected $table = 'rank';
     use HasFactory;
 }

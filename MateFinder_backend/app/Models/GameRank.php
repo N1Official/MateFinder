@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class GameRank extends Model
 {
+    protected $table = 'game_rank';
     use HasFactory;
 }
