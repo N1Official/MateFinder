@@ -8,5 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class GameCategory extends Model
 {
     protected $table = 'game_category';
+    public $timestamps = false;
+    
     use HasFactory;
 }

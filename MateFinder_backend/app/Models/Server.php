@@ -8,5 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Server extends Model
 {
     protected $table = 'server';
+    public $timestamps = false;
+    
     use HasFactory;
 }
