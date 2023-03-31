@@ -14,6 +14,8 @@ class RankSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB:_table("rank")->insert([
+
+        ]);
     }
 }

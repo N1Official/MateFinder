@@ -14,6 +14,8 @@ class GameSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB:_table("game")->insert([
+            'name' => 'Counter-Strike:Global Offensive'
+        ]);
     }
 }

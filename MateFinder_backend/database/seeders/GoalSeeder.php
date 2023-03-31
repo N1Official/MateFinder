@@ -14,6 +14,8 @@ class GoalSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB:_table("goal")->insert([
+
+        ]);
     }
 }

@@ -14,6 +14,8 @@ class UserGamesSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB:_table("user_games")->insert([
+
+        ]);
     }
 }

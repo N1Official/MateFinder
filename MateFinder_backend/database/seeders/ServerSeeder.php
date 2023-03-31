@@ -14,6 +14,8 @@ class ServerSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB:_table("server")->insert([
+
+        ]);
     }
 }

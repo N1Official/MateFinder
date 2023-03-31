@@ -14,6 +14,8 @@ class GameCategorySeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB:_table("game_category")->insert([
+
+        ]);
     }
 }
