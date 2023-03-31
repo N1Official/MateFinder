@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('userGames', function (Blueprint $table) {
-            $table->foreignId("user_id");
-            $table->foreignId("game_id");
-            $table->foreignId("goal_id");
-            $table->foreignId("rank_id");
+        Schema::create('user_games', function (Blueprint $table) {
+            $table->foreignId("user_id")->constrained('users','id');
+            $table->foreignId("game_id")->constrained('game','id');
+            $table->foreignId("goal_id")->constrained('goal','id');
+            $table->foreignId("rank_id")->constrained('rank','id');
             $table->integer("level");
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('userGames');
+        Schema::dropIfExists('user_games');
     }
 };

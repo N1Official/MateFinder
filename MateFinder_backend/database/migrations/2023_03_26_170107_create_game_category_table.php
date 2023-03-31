@@ -13,8 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('gameCategory', function (Blueprint $table) {
-            $table->foreignId("game_id")->references('id')->on('game');
+        Schema::create('game_category', function (Blueprint $table) {
+            $table->foreignId("game_id")->constrained('game','id');
             $table->foreignId("category_id");
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gameCategory');
+        Schema::dropIfExists('game_category');
     }
 };

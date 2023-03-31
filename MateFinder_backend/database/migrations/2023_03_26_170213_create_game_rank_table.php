@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('gameRank', function (Blueprint $table) {
-            $table->foreignId("rank_id");
-            $table->foreignId("game_id");
+        Schema::create('game_rank', function (Blueprint $table) {
+            $table->foreignId("rank_id")->constrained('rank','id');
+            $table->foreignId("game_id")->constrained('game','id');
             $table->integer("order");
         });
     }
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gameRank');
+        Schema::dropIfExists('game_rank');
     }
 };
