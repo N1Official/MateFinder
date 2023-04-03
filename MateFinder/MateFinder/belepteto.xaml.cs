@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MateFinder
@@ -18,7 +17,7 @@ namespace MateFinder
     /// <summary>
     /// Interaction logic for belepteto.xaml
     /// </summary>
-    public partial class belepteto : Page
+    public partial class belepteto : Window
     {
         public belepteto()
         {
