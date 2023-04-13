@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class GoalSeeder extends Seeder
 {
@@ -14,8 +15,14 @@ class GoalSeeder extends Seeder
      */
     public function run()
     {
-        DB:_table("goal")->insert([
-
+        DB::table("goal")->insert([
+            'name' => 'hobby'
+        ]);
+        DB::table("goal")->insert([
+            'name' => 'competetive'
+        ]);
+        DB::table("goal")->insert([
+            'name' => 'fun'
         ]);
     }
 }

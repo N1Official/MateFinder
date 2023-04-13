@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
 
 class GameSeeder extends Seeder
 {
@@ -14,8 +16,11 @@ class GameSeeder extends Seeder
      */
     public function run()
     {
-        DB:_table("game")->insert([
+        DB::table("game")->insert([
             'name' => 'Counter-Strike:Global Offensive'
+        ]);
+        DB::table("game")->insert([
+            'name' => 'Leauge of Legends'
         ]);
     }
 }

@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Vue-alap</a>
+        <a class="navbar-brand" href="#">MateFinder</a>
         <button
           class="navbar-toggler"
           type="button"

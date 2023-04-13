@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class UserGamesSeeder extends Seeder
 {
@@ -14,8 +15,12 @@ class UserGamesSeeder extends Seeder
      */
     public function run()
     {
-        DB:_table("user_games")->insert([
-
+        DB::table("user_games")->insert([
+            'user_id' => 1,
+            'game_id' => 1,
+            'goal_id' => 3,
+            'rank_id' => 20,
+            'level' => 15
         ]);
     }
 }
