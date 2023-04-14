@@ -16,7 +16,17 @@ class UserSeeder extends Seeder
     public function run()
     {
         DB::table("users")->insert([
-
+            'username' => 'N1Official',
+            'firstName' => 'László',
+            'lastName' => 'Dao',
+            'email' => 'dao.laszlo03@gmail.com',
+            'phone' => '+36706229262',
+            'password' => 'secretpass',
+            'country' => 'Magyarország',
+            'state' => 'Pest',
+            'city' => 'Budapest',
+            'zipcode' => '1102',
+            'address' => 'Kőrösi Csoma Sándor út 27',
         ]);
     }
 }
