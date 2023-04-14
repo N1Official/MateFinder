@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 //Controllers
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\GameCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,5 +38,22 @@ Route::put('/category/{id}', [CategoryController::class, "update"])
 
 Route::delete('/category/{id}', [CategoryController::class, "destroy"])
     ->name("category.destroy");
+
+
+//GameCategory
+Route::get('/gamecategory', [GameCategoryController::class, "index"])
+    ->name("gamecategory.index");
+
+Route::get('/gamecategory/{id}', [GameCategoryController::class, "show"])
+    ->name("gamecategory.show");
+
+Route::post('/gamecategory', [GameCategoryController::class, "store"])
+    ->name("gamecategory.store");
+
+Route::put('/gamecategory/{id}', [GameCategoryController::class, "update"])
+    ->name("gamecategory.update");
+
+Route::delete('/gamecategory/{id}', [GameCategoryController::class, "destroy"])
+    ->name("gamecategory.destroy");
 
 
