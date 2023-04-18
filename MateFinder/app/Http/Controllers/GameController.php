@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Game;
+use App\Http\Resources\GameResource;
+use App\Http\Requests\StoreGameRequest;
+use App\Http\Requests\UpdateGameRequest;
 
 class GameController extends Controller
 {
@@ -13,18 +17,21 @@ class GameController extends Controller
      */
     public function index()
     {
-        //
+        $game = Game::all();
+        return GameResource::collection($game);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\StoreGameRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreGameRequest $request)
     {
-        //
+        $data = $request->validated();
+        $newGame = Game::create($data);
+        return new GameResource($newGame);
     }
 
     /**
@@ -35,19 +42,24 @@ class GameController extends Controller
      */
     public function show($id)
     {
-        //
+        $game = Game::findOrFail($id);
+        return new GameResource($game);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\UpdateGameRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateGameRequest $request, $id)
     {
-        //
+        $data = $request->validated();
+        $game = Game::findOrFail($id);
+        if ($game->update($data)) {
+            return new GameResource($game);
+        }
     }
 
     /**
@@ -58,6 +70,7 @@ class GameController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $game = Game::findOrFail($id);
+        $game->delete();
     }
 }
