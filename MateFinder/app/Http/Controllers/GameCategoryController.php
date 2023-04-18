@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\GameCategory;
+use App\Http\Resources\GameCategoryResource;
+use App\Http\Requests\StoreGameCategoryRequest;
+use App\Http\Requests\UpdateGameCategoryRequest;
 
 class GameCategoryController extends Controller
 {
@@ -13,18 +17,21 @@ class GameCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $gamecategorys = GameCategory::all();
+        return GameCategoryResource::collection($gamecategorys);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\StoreGameCategoryRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreGameCategoryRequest $request)
     {
-        //
+        $data = $request->validated();
+        $newGameCategory = GameCategory::create($data);
+        return new GameCategoryResource($newGameCategory);
     }
 
     /**
@@ -35,19 +42,23 @@ class GameCategoryController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\UpdateGameCategoryRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateGameCategoryRequest $request, $id)
     {
-        //
+        $data = $request->validated();
+        $gamecategory = GameCategory::findOrFail($id);
+        if ($category->update($data)) {
+            return new GameCategoryResource($gamecategory);
+        }
     }
 
     /**

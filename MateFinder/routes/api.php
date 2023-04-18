@@ -176,3 +176,4 @@ Route::put('/usergames/{id}', [UserGamesController::class, "update"])
 
 Route::delete('/usergames/{id}', [UserGamesController::class, "destroy"])
     ->name("usergames.destroy");
+    
