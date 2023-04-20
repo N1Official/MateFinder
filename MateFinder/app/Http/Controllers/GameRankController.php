@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\GameRank;
+use App\Http\Resources\GameRankResource;
+use App\Http\Requests\StoreGameRankRequest;
+
 class GameRankController extends Controller
 {
     /**
@@ -13,18 +17,21 @@ class GameRankController extends Controller
      */
     public function index()
     {
-        //
+        $gameranks = GameRank::all();
+        return GameRankResource::collection($gameranks);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\StoreGameRankRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreGameRankRequest $request)
     {
-        //
+        $data = $request->validated();
+        $newGameRank = GameRank::create($data);
+        return new GameRankyResource($newGameRank);
     }
 
     /**
