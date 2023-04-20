@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Goal;
+use App\Http\Resources\GoalResource;
+use App\Http\Requests\StoreGoalRequest;
+use App\Http\Requests\UpdateGoalRequest;
+
 class GoalController extends Controller
 {
     /**
@@ -13,18 +18,21 @@ class GoalController extends Controller
      */
     public function index()
     {
-        //
+        $goals = Goal::all();
+        return GoalResource::collection($goals);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\StoreGoalRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreGoalRequest $request)
     {
-        //
+        $data = $request->validated();
+        $newGoal = Goal::create($data);
+        return new GoalResource($newGoal);
     }
 
     /**
@@ -35,19 +43,24 @@ class GoalController extends Controller
      */
     public function show($id)
     {
-        //
+        $goal = Goal::findOrFail($id);
+        return new GoalResource($goal);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\UpdateGoalRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateGoalRequest $request, $id)
     {
-        //
+        $data = $request->validated();
+        $goal = Goal::findOrFail($id);
+        if ($goal->update($data)) {
+            return new GoalResource($goal);
+        }
     }
 
     /**
@@ -58,6 +71,7 @@ class GoalController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $goal = Goal::findOrFail($id);
+        $goal->delete();
     }
 }
