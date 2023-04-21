@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\GameRank;
 use App\Http\Resources\GameRankResource;
 use App\Http\Requests\StoreGameRankRequest;
+use App\Http\Requests\UpdateGameRankRequest;
 
 class GameRankController extends Controller
 {
@@ -42,19 +43,24 @@ class GameRankController extends Controller
      */
     public function show($id)
     {
-        //
+        $gamerank = GameRank::findOrFail($id);
+        return new GameRankResource($gamerank);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param App\Http\Requests\UpdateGameRankRequest;  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateGameRankRequest $request, $id)
     {
-        //
+        $data = $request->validated();
+        $gamerank = GameRank::findOrFail($id);
+        if ($gamerank->update($data)) {
+            return new GameRankResource($gamerank);
+        }
     }
 
     /**
@@ -65,6 +71,7 @@ class GameRankController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $gamerank = GameRank::findOrFail($id);
+        $gamerank->delete();
     }
 }

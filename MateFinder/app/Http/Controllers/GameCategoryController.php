@@ -70,7 +70,7 @@ class GameCategoryController extends Controller
      */
     public function destroy($id)
     {
-        $gamecategory = Category::findOrFail($id);
+        $gamecategory = GameCategory::findOrFail($id);
         $gamecategory->delete();
     }
 }
