@@ -23,7 +23,7 @@ class ServerController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  App\Http\Requests\StoreServerRequest;  $request
+     * @param  App\Http\Requests\StoreServerRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreServerRequest $request)

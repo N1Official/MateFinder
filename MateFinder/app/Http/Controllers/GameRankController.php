@@ -50,7 +50,7 @@ class GameRankController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param App\Http\Requests\UpdateGameRankRequest;  $request
+     * @param App\Http\Requests\UpdateGameRankRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
