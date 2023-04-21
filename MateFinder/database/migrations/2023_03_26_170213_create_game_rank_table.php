@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('game_rank', function (Blueprint $table) {
+            $table->id();
             $table->foreignId("rank_id")->constrained('rank','id');
             $table->foreignId("game_id")->constrained('game','id');
             $table->integer("order");
