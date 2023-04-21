@@ -7,8 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rank extends Model
 {
+    protected $fillable = [
+        "name"
+    ];
     protected $table = 'rank';
     public $timestamps = false;
-    
+
     use HasFactory;
 }
