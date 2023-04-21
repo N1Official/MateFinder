@@ -15,6 +15,7 @@ class GameRankResource extends JsonResource
     public function toArray($request)
     {
         return [
+            "id" => $this ->id,
             "rank_id" => $this ->rank_id,
             "game_id" => $this -> game_id,
             "order" => $this -> order,

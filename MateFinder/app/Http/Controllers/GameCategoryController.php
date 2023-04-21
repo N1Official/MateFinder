@@ -42,7 +42,8 @@ class GameCategoryController extends Controller
      */
     public function show($id)
     {
-
+        $gamecategory = GameCategory::findOrFail($id);
+        return new GameCategoryResource($gamecategory);
     }
 
     /**
@@ -69,6 +70,7 @@ class GameCategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $gamecategory = Category::findOrFail($id);
+        $gamecategory->delete();
     }
 }

@@ -15,6 +15,7 @@ class GameCategoryResource extends JsonResource
     public function toArray($request)
     {
         return [
+            "id" => $this ->id,
             "game_id" => $this ->game_id,
             "category_id" => $this -> category_id,
         ];
