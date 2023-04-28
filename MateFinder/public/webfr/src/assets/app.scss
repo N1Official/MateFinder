@@ -1,7 +1,11 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'css/style.css';
+@import 'css/style-head.css';
+@import 'css/style-main.css';
+@import 'css/style-foot.css';
 
 #app {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  // height: 100vh;
+  // display: flex;
+  // flex-direction: column;
 }

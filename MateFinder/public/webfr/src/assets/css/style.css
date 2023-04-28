@@ -55,7 +55,7 @@ body{
     background-color: var(--back-primary);
     color: var(--fore-primary);
     font-family: satoshi-regular;
-    user-select: none;
+    /* user-select: none; */
 }
 a{
     color: var(--fore-primary);

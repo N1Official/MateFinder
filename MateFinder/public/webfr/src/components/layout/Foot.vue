@@ -50,15 +50,15 @@
                     
                     <div class="foot-content-socials-icons">
                         <a href="https://facebook.com/" target="_blank">
-                            <img src="assets/icons/facebook-f.svg" alt="facebook">
+                            <img src="../../assets/icons/facebook-f.svg" alt="facebook">
                         </a>
 
                         <a href="https://twitter.com/" target="_blank">
-                            <img src="assets/icons/twitter.svg" alt="twitter">
+                            <img src="../../assets/icons/twitter.svg" alt="twitter">
                         </a>
 
                         <a href="https://www.instagram.com/" target="_blank">
-                            <img src="assets/icons/instagram.svg" alt="instagram">
+                            <img src="../../assets/icons/instagram.svg" alt="instagram">
                         </a>
                     </div>
                 </div>

@@ -14,26 +14,26 @@
             <a href="#">
                 Join the community
                 
-                <img src="assets/icons/arrow-turn-up-solid.svg" alt="up right arrow">
+                <img src="../assets/icons/arrow-turn-up-solid.svg" alt="up right arrow">
             </a>
         </div>
 
         <!-- Main Features -->
         <div class="main-features" id="features">
             <div>
-                <img src="assets/icons/magnifying-glass-solid.svg" alt="search">
+                <img src="../assets/icons/magnifying-glass-solid.svg" alt="search">
 
                 <p><span>Advanced Search</span><br> Easily find like-minded gamers based on gaming platform, genre, language, and skill level.</p>
             </div>
 
             <div>
-                <img src="assets/icons/bars-progress-solid.svg" alt="progress">
+                <img src="../assets/icons/bars-progress-solid.svg" alt="progress">
 
                 <p><span>Skill Tracking</span><br> Track your skills and progression across different games to improve your gameplay.</p>
             </div>
 
             <div>
-                <img src="assets/icons/calendar-days-solid.svg" alt="calendar">
+                <img src="../assets/icons/calendar-days-solid.svg" alt="calendar">
 
                 <p><span>Gaming Events</span><br> Participate in regular gaming events and tournaments to compete against other gamers and win prizes.</p>
             </div>

@@ -1,14 +1,14 @@
 <template>
   <!-- Head -->
-  <div class="head">
+  <div class="head" id="home">
         <!-- Head Title -->
         <a class="head-title" href="/">
-            Mate
+            MateFinder
         </a>
 
         <!-- Head Nav -->
         <div class="head-nav">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
             <a href="#features">Features</a>
             <a href="#about">About</a>
             <a href="#vision">Vision</a>
@@ -18,7 +18,7 @@
         
         <!-- Head User -->
         <a class="head-user" href="#">
-            <img src="assets/icons/user.svg" alt="user">
+            <img src="../../assets/icons/user.svg" alt="user">
         </a>
 
         <!-- Head Burgir -->
