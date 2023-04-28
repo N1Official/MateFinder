@@ -22,6 +22,9 @@ export default ({ mode }) => {
              }),
         ],
         server: {
+            watch: {
+                usePolling:true
+            },
             port:  process.env.VITE_PORT,
             host:  process.env.VITE_HOST,
             hmr:{

@@ -1,0 +1,63 @@
+/* Root */
+:root{
+    --back-primary: #141420;
+    --back-secondary: #08080c;
+
+    --fore-primary: #FFFFFF;
+    --fore-secondary: #E0E0E0;
+
+    --transition-speed: .25s;
+}
+
+/* Fonts */
+@font-face {
+    font-family: satoshi-regular;
+    src: url(../fonts/Satoshi-Regular.woff);
+}
+@font-face {
+    font-family: satoshi-medium;
+    src: url(../fonts/Satoshi-Medium.woff);
+}
+@font-face {
+    font-family: satoshi-bold;
+    src: url(../fonts/Satoshi-Bold.woff);
+}
+@font-face {
+    font-family: satoshi-black;
+    src: url(../fonts/Satoshi-Black.woff);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: .5rem;
+    height: .5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--back-primary);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--back-secondary);
+    /* border-radius: .25rem; */
+}
+
+/* Style */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--back-primary);
+    color: var(--fore-primary);
+    font-family: satoshi-regular;
+    user-select: none;
+}
+a{
+    color: var(--fore-primary);
+    text-decoration: none;
+}

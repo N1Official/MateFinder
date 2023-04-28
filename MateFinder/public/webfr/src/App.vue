@@ -1,11 +1,12 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import VNav from '@/components/layout/BSNavBar.vue'
-import VFooter from '@/components/layout/Footer.vue'
+import Foot from '@/components/layout/Foot.vue'
+import Head from './components/layout/Head.vue';
+import LandingPage from './pages/HomePage.vue';
 </script>
 
 <template>
-  <v-nav />
-  <router-view />
-  <v-footer />
+  <Head/>
+  <Foot/>
+  <RouterView/>
 </template>
