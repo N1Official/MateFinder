@@ -8,18 +8,17 @@
 
         <!-- Head Nav -->
         <div class="head-nav">
-            <a href="#home">Home</a>
+            <router-link to="/">Home</router-link>
             <a href="#features">Features</a>
             <a href="#about">About</a>
             <a href="#vision">Vision</a>
-            <a href="#events">Events</a>
             <a href="#contact">Contact</a>
         </div>
         
-        <!-- Head User -->
-        <a class="head-user" href="#">
-            <img src="../../assets/icons/user.svg" alt="user">
-        </a>
+        <!-- Head Button -->
+        <router-link class="head-button" to="/form">
+            <span class="head-button">Search</span>
+        </router-link>
 
         <!-- Head Burgir -->
         <div class="head-burgir">

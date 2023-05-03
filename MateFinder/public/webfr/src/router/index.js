@@ -6,12 +6,21 @@ export const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/pages/HomePage.vue'),
+      component: () => import('@/pages/LandingPage.vue'),
       meta: {
         requiresAuth: false,
         title: 'Főoldal'
       }
-    }
+    },
+    {
+      path: '/form',
+      name: 'form',
+      component: () => import('@/pages/SearchForm.vue'),
+      meta: {
+        requiresAuth: false,
+        title: 'Főoldal'
+      }
+    },
   ]
 })
 

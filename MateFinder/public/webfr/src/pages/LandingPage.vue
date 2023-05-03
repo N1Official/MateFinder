@@ -12,7 +12,7 @@
             <div class="main-intro-sub">Join the thousands of gamers who have already discovered the benefits of using our platform to find their ideal gaming partners and make new friends.</div>
 
             <a href="#">
-                Join the community
+                Search for a Mate
                 
                 <img src="../assets/icons/arrow-turn-up-solid.svg" alt="up right arrow">
             </a>
@@ -23,26 +23,26 @@
             <div>
                 <img src="../assets/icons/magnifying-glass-solid.svg" alt="search">
 
-                <p><span>Advanced Search</span><br> Easily find like-minded gamers based on gaming platform, genre, language, and skill level.</p>
+                <p><span>Advanced Search</span><br> Easily find like-minded gamers based on your chosen game, server, goal.</p>
             </div>
 
             <div>
                 <img src="../assets/icons/bars-progress-solid.svg" alt="progress">
 
-                <p><span>Skill Tracking</span><br> Track your skills and progression across different games to improve your gameplay.</p>
+                <p><span>Tracking</span><br>You can track gamers across different games to get you in mood.</p>
             </div>
 
             <div>
                 <img src="../assets/icons/calendar-days-solid.svg" alt="calendar">
 
-                <p><span>Gaming Events</span><br> Participate in regular gaming events and tournaments to compete against other gamers and win prizes.</p>
+                <p><span>Gaming Events</span><br> Participate in regular gaming events and tournaments? Search here for Mates!</p>
             </div>
         </div>
 
         <!-- Main About -->
         <div class="main-about" id="about">
             <div class="main-about-image">
-                Pacek About Image
+                <img src="about.png" class="img-fluid" alt="crowd" style="width: 100%;">
             </div>
             
             <div class="main-about-text">
@@ -73,14 +73,9 @@
             </div>
 
             <div class="main-vision-image">
-                Pacek Vision Image
+                <img src="connection.jpg" class="img-fluid" alt="crowd" style="width: 100%;">
             </div>
         </div>
-
-        <!-- Main Events -->
-        <!-- <div class="main-events" id="events">
-
-        </div> -->
     </div>
 
     
