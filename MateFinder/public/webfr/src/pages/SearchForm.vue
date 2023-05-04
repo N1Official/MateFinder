@@ -39,76 +39,98 @@
                         </div>
                     </div>
                 </div>
-                <label class="form-label">Choose a server!</label>
-                <div class="my-3 servers">
-                    <div class="eu mx-5">
-                        <label class="text-center">
-                            <input type="radio" name="server" value="eu" >
-                            <img src="server.png" alt="eu" class="img-fluid" style="max-width: 100px;">
-                            <br>EU
-                        </label>
+                <div class="row">
+                    <label class="form-label">Choose a server!</label>
+                     <div class="my-2 servers">
+                    <div class="col-2 mx-2">
+                        <div class="eu">
+                            <label class="text-center">
+                                <input type="radio" name="server" value="eu" >
+                                <img src="server.png" alt="eu" class="img-fluid">
+                                <br>EU
+                            </label>
+                        </div>
                     </div>
-                    <div class="usa mx-5">
-                        <label class="text-center">
-                            <input type="radio" name="server" value="usa">
-                            <img src="server.png" alt="usa" class="img-fluid" style="max-width: 100px;">
-                            <br>USA
-                        </label>
+                    <div class="col-2 mx-2">
+                        <div class="usa">
+                            <label class="text-center">
+                                <input type="radio" name="server" value="usa">
+                                <img src="server.png" alt="usa" class="img-fluid">
+                                <br>USA
+                            </label>
+                        </div>
                     </div>
-                    <div class="ru mx-5">
-                        <label class="text-center">
-                            <input type="radio" name="server" value="russia">
-                            <img src="server.png" alt="Russia" class="img-fluid" style="max-width: 100px;">
-                            <br>Russia
-                        </label>
+                    <div class="col-2 mx-2">
+                        <div class="ru">
+                            <label class="text-center">
+                                <input type="radio" name="server" value="russia">
+                                <img src="server.png" alt="Russia" class="img-fluid">
+                                <br>Russia
+                            </label>
+                        </div>
                     </div>
-                    <div class="asia mx-5">
-                        <label class="text-center">
-                            <input type="radio" name="server" value="asia">
-                            <img src="server.png" alt="Russia" class="img-fluid" style="max-width: 100px;">
-                            <br>Asia
-                        </label>
+                    <div class="col-2 mx-2">
+                        <div class="asia">
+                            <label class="text-center">
+                                <input type="radio" name="server" value="asia">
+                                <img src="server.png" alt="Russia" class="img-fluid">
+                                <br>Asia
+                            </label>
+                        </div>
                     </div>
-                    <div class="uk mx-5">
-                        <label class="text-center">
-                            <input type="radio" name="server" value="uk">
-                            <img src="server.png" alt="Russia" class="img-fluid" style="max-width: 100px;">
-                            <br>UK
-                        </label>
+                    <div class="col-2 mx-2">
+                        <div class="uk">
+                            <label class="text-center">
+                                <input type="radio" name="server" value="uk">
+                                <img src="server.png" alt="Russia" class="img-fluid">
+                                <br>UK
+                            </label>
+                        </div>
                     </div>
+                    <div class="col-2" style="width: 0px;"></div>
                 </div>
-                <label class="form-label">Choose a game!</label>
-                <div class="my-3 games">
-                    <div class="csgo mx-3">
-                        <label class="text-center">
-                            <input type="radio" name="game" value="csgo">
-                            <img src="csgo.jpg" alt="csgo" class="img-fluid" style="max-width: 250px;">
-                        </label>
+            </div>
+               
+                    
+                    
+                    
+                    
+                    
+                <div class="row">
+                    <label class="form-label">Choose a game!</label>
+                    <div class="my-3 games">
+                        
+                        <div class="csgo col-3 mx-2" >
+                            <label class="text-center">
+                                <input type="radio" name="game" value="csgo">
+                                <img src="csgo.jpg" alt="csgo" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="lol col-3 mx-2">
+                            <label class="text-center">
+                                <input type="radio" name="game" value="lol" >
+                                <img src="lol.jpg" alt="lol" class="img-fluid" >
+                                <br>
+                            </label>
+                        </div>
+                        <div class="forza col-3 mx-2">
+                            <label class="text-center">
+                                <input type="radio" name="game" value="forza" >
+                                <img src="forza.jpg" alt="forza" class="img-fluid">
+                                <br>
+                            </label>
+                        </div>
+                        <div class="apex col-3 mx-2">
+                            <label class="text-center">
+                                <input type="radio" name="game" value="apex">
+                                <img src="apex.jpg" alt="apex" class="img-fluid">
+                                <br>
+                            </label>
+                        </div>
                     </div>
-                    <div class="lol mx-3">
-                        <label class="text-center">
-                            <input type="radio" name="game" value="lol" >
-                            <img src="lol.jpg" alt="lol" class="img-fluid" style="max-width: 250px;">
-                            <br>
-                        </label>
+                    <div class="text-center mt-5">
+                        <button type="submit" class="btn btn-primary" style="font-size: 1.25rem;">Search!</button>
                     </div>
-                    <div class="forza mx-3">
-                        <label class="text-center">
-                            <input type="radio" name="game" value="forza" >
-                            <img src="forza.jpg" alt="forza" class="img-fluid" style="max-width: 250px;">
-                            <br>
-                        </label>
-                    </div>
-                    <div class="apex mx-3">
-                        <label class="text-center">
-                            <input type="radio" name="game" value="apex">
-                            <img src="apex.jpg" alt="apex" class="img-fluid" style="max-width: 250px;">
-                            <br>
-                        </label>
-                    </div>
-                </div>
-                <div class="text-center mt-5">
-                    <button type="submit" class="btn btn-primary" style="font-size: 1.25rem;">Search!</button>
                 </div>
             </form>
         </div>
