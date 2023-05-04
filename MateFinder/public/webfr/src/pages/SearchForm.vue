@@ -20,9 +20,24 @@
                             <div id="usernameHelp" class="form-text">What is your in-game name?</div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="mb-3">
-                        <label for="goal" class="form-label">What's your goal?</label>
+                    <div class="col-6 row">
+                        <div class="mb-3 col-6">
+                            <label for="gender" class="form-label">What's your gender?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                <label class="form-check-label" for="male">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                <label class="form-check-label" for="female">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="goal" class="form-label">What's your goal?</label>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="goal" id="fun" value="fun">
                                 <label class="form-check-label" for="fun">
