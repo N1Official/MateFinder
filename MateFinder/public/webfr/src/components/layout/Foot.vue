@@ -68,7 +68,7 @@
             <div class="foot-content-bot">
                 <!-- Foot Content Copyright -->
                 <div class="foot-content-copyright">
-                    MateFinder, 2023 All rights reserved
+                    MateFinder, {{ currentYear }} All rights reserved
                 </div>
 
                 <!-- Foot Content Policies -->
