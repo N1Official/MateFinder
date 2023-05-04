@@ -18,7 +18,7 @@ export const router = createRouter({
       component: () => import('@/pages/SearchForm.vue'),
       meta: {
         requiresAuth: false,
-        title: 'Főoldal'
+        title: 'Űrlap'
       }
     },
   ]

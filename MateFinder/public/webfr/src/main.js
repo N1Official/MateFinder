@@ -4,6 +4,7 @@ import { router } from '@/router/index.js'
 import App from '@/App.vue'
 
 import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
 import '@/assets/app.scss'
 
 const app = createApp(App)

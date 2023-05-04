@@ -31,13 +31,9 @@ class ServerSeeder extends Seeder
             'game_id' => 2,
             'name' => 'Asia'
         ]);
-        DB::table("server")->insert([
-            'game_id' => 1,
-            'name' => 'US'
-        ]);
-        DB::table("server")->insert([
+	DB::table("server")->insert([
             'game_id' => 2,
-            'name' => 'US'
+            'name' => 'UK'
         ]);
         DB::table("server")->insert([
             'game_id' => 1,
