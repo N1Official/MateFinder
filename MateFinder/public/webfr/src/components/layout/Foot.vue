@@ -19,10 +19,11 @@
                     </div>
 
                     <form class="foot-content-subscribe-form">
-                        <input type="email" name="email" id="email" placeholder="Email address">
+                        <input type="email" name="email" id="email" placeholder="Email address" disabled style="text-decoration: line-through;">
 
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" disabled>
                     </form>
+                    <span class="text-center">Unfortunately, it's not available!</span>
                 </div>
 
                 <!-- Foot Content Contact -->
