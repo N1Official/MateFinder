@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateGameRankRequest extends FormRequest
+class UpdateSearcherRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,14 @@ class UpdateGameRankRequest extends FormRequest
     public function rules()
     {
         return [
-            "rank_id" => "required",
+            "id" => "required",
+            "username" => "required",
+            "profilelink" => "required",
             "game_id" => "required",
-            "order" => "required|numeric",
+            "goal_id" => "required",
+            "server_id" => "required",
+            "gender_id" => "required",
+            "last_online" => "required",
         ];
     }
 }

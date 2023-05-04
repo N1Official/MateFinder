@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UserGames extends Model
+class Gender extends Model
 {
     protected $fillable = [
-        "user_id","game_id","goal_id","rank_id", "level"
+        "name"
     ];
-    protected $table = 'user_games';
+    protected $table = 'genders';
     public $timestamps = false;
-
+    
     use HasFactory;
 }

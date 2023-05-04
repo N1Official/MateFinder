@@ -16,7 +16,6 @@ class ServerResource extends JsonResource
     {
         return [
             "id" => $this ->id,
-            "game_id" => $this -> game_id,
             "name" => $this -> name,
         ];
     }

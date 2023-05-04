@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Server extends Model
 {
     protected $fillable = [
-        "game_id", "name"
+        "name"
     ];
     protected $table = 'server';
     public $timestamps = false;

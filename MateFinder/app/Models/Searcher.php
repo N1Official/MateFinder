@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Searcher extends Model
 {
     protected $fillable = [
-        "name"
+        "username","profilelink","game_id","goal_id", "server_id", "gender_id",
+        "last_online",
     ];
-    protected $table = 'category';
+
+    protected $table = 'searchers';
     public $timestamps = false;
-    
     use HasFactory;
 }

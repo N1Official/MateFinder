@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gender;
 use Illuminate\Http\Request;
-use App\Models\Rank;
-use App\Http\Resources\RankResource;
-use App\Http\Requests\StoreRankRequest;
-use App\Http\Requests\UpdateRankRequest;
+use App\Http\Resources\GenderResource;
+use App\Http\Requests\StoreGenderRequest;
+use App\Http\Requests\UpdateGenderRequest;
 
-
-class RankController extends Controller
+class GenderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,21 +17,21 @@ class RankController extends Controller
      */
     public function index()
     {
-        $ranks = Rank::all();
-        return RankResource::collection($ranks);
+        $Genders = Gender::all();
+        return GenderResource::collection($Genders);        
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  App\Http\Requests\StoreRankRequest  $request
+     * @param  App\Http\Requests\StoreGenderRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreRankRequest $request)
+    public function store(StoreGenderRequest  $request)
     {
         $data = $request->validated();
-        $newRank = Rank::create($data);
-        return new RankResource($newRank);
+        $newGender = Gender::create($data);
+        return new GenderResource($newGender);
     }
 
     /**
@@ -43,23 +42,23 @@ class RankController extends Controller
      */
     public function show($id)
     {
-        $rank = Rank::findOrFail($id);
-        return new RankResource($rank);
+        $Gender = Gender::findOrFail($id);
+        return new GenderResource($Gender);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  App\Http\Requests\UpdateRankRequest  $request
+     * @param  App\Http\Requests\UpdateGenderRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateRankRequest $request, $id)
+    public function update(UpdateGenderRequest $request, $id)
     {
         $data = $request->validated();
-        $rank = Rank::findOrFail($id);
-        if ($rank->update($data)) {
-            return new RankResource($rank);
+        $Gender = Gender::findOrFail($id);
+        if ($Gender->update($data)) {
+            return new GenderResource($Gender);
         }
     }
 
@@ -71,7 +70,7 @@ class RankController extends Controller
      */
     public function destroy($id)
     {
-        $rank = Rank::findOrFail($id);
-        $rank->delete();
+        $Gender = Gender::findOrFail($id);
+        $Gender->delete();
     }
 }

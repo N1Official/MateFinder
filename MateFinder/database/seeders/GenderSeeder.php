@@ -6,7 +6,8 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class UserGamesSeeder extends Seeder
+
+class GenderSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,12 +16,11 @@ class UserGamesSeeder extends Seeder
      */
     public function run()
     {
-        DB::table("user_games")->insert([
-            'user_id' => 1,
-            'game_id' => 1,
-            'goal_id' => 3,
-            'rank_id' => 20,
-            'level' => 15
+        DB::table("genders")->insert([
+            'name' => 'Male'
+        ]);
+        DB::table("genders")->insert([
+            'name' => 'Female'
         ]);
     }
 }

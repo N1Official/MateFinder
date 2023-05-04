@@ -24,7 +24,6 @@ class StoreServerRequest extends FormRequest
     public function rules()
     {
         return [
-            "game_id" => "required|numeric",
             "name" =>"required",
         ];
     }

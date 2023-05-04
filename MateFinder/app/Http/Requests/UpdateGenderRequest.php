@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreRankRequest extends FormRequest
+class UpdateGenderRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,7 @@ class StoreRankRequest extends FormRequest
     public function rules()
     {
         return [
-            "name" =>"required",
+            "name" =>"required", 
         ];
     }
 }

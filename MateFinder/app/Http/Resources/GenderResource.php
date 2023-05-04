@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class GameCategoryResource extends JsonResource
+class GenderResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,8 +16,7 @@ class GameCategoryResource extends JsonResource
     {
         return [
             "id" => $this ->id,
-            "game_id" => $this ->game_id,
-            "category_id" => $this -> category_id,
+            "name" => $this -> name,
         ];
     }
 }

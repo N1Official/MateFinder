@@ -22,5 +22,11 @@ class GameSeeder extends Seeder
         DB::table("game")->insert([
             'name' => 'Leauge of Legends'
         ]);
+        DB::table("game")->insert([
+            'name' => 'Apex Legends'
+        ]);
+        DB::table("game")->insert([
+            'name' => 'Forza'
+        ]);
     }
 }

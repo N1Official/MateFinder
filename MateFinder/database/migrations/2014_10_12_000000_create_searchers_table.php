@@ -13,10 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('game_category', function (Blueprint $table) {
+        Schema::create('searchers', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("game_id")->constrained('game','id');
-            $table->foreignId("category_id");
+            $table->string('username');
+            $table->string('profilelink');
+            $table->integer('game_id');
+            $table->integer('goal_id');
+            $table->integer('server_id');
+            $table->integer('gender_id');
+            $table->timestamp('last_online');
         });
     }
 
@@ -27,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('game_category');
+        Schema::dropIfExists('searchers');
     }
 };

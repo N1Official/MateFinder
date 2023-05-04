@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('server', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId("game_id")->constrained('game','id');            
+            $table->id();         
             $table->string("name");
         });
     }

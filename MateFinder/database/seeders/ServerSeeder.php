@@ -16,39 +16,18 @@ class ServerSeeder extends Seeder
     public function run()
     {
         DB::table("server")->insert([
-            'game_id' => 1,
             'name' => 'EU'
         ]);
         DB::table("server")->insert([
-            'game_id' => 2,
-            'name' => 'EU'
-        ]);
-        DB::table("server")->insert([
-            'game_id' => 1,
             'name' => 'Asia'
         ]);
-        DB::table("server")->insert([
-            'game_id' => 2,
-            'name' => 'Asia'
-        ]);
-	DB::table("server")->insert([
-            'game_id' => 2,
+	    DB::table("server")->insert([
             'name' => 'UK'
         ]);
         DB::table("server")->insert([
-            'game_id' => 1,
             'name' => 'USA'
         ]);
         DB::table("server")->insert([
-            'game_id' => 2,
-            'name' => 'USA'
-        ]);
-        DB::table("server")->insert([
-            'game_id' => 1,
-            'name' => 'Russia'
-        ]);
-        DB::table("server")->insert([
-            'game_id' => 2,
             'name' => 'Russia'
         ]);
     }
