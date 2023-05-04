@@ -8,11 +8,16 @@
             <legend class="text-center mb-4" style="font-family: satoshi-bold;">Welcome Mate!</legend>
             <form>
                 <div class="row">
-                    <div class="col-6 my-auto">
-                        <div class="mb-3">
+                    <div class="col-6 my-auto row">
+                        <div class="mb-3 col-6">
+                            <label for="profile-link" class="form-label">Profile link</label>
+                            <input type="text" class="form-control" id="profile-link" aria-describedby="profile-link" placeholder="Steam, facebook etc.">
+                            <div id="profile-linkHelp" class="form-text">Let your Mates know how they can get in touch with you.</div>
+                        </div>
+                        <div class="mb-3 col-6">
                             <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" style="max-width: 24rem;" id="username" aria-describedby="username">
-                            <div id="usernameHelp" class="form-text">Let your Mates know who you are.</div>
+                            <input type="text" class="form-control" id="username" aria-describedby="username">
+                            <div id="usernameHelp" class="form-text">What is your in-game name?</div>
                         </div>
                     </div>
                     <div class="col-6">
@@ -89,13 +94,7 @@
                     </div>
                     <div class="col-2" style="width: 0px;"></div>
                 </div>
-            </div>
-               
-                    
-                    
-                    
-                    
-                    
+            </div>   
                 <div class="row">
                     <label class="form-label">Choose a game!</label>
                     <div class="my-3 games">
