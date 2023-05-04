@@ -4,15 +4,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 //Controllers
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\GameCategoryController;
+use App\Http\Controllers\GenderController;
 use App\Http\Controllers\GameController;
-use App\Http\Controllers\GameRankController;
 use App\Http\Controllers\GoalController;
-use App\Http\Controllers\RankController;
 use App\Http\Controllers\ServerController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\UserGamesController;
+use App\Http\Controllers\SearcherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,39 +25,24 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//Category
+//Gender
 
-Route::get('/category', [CategoryController::class, "index"])
-    ->name("category.index");
+Route::get('/gender', [GenderController::class, "index"])
+    ->name("gender.index");
 
-Route::get('/category/{id}', [CategoryController::class, "show"])
-    ->name("category.show");
+Route::get('/gender/{id}', [GenderController::class, "show"])
+    ->name("gender.show");
 
-Route::post('/category', [CategoryController::class, "store"])
-    ->name("category.store");
+Route::post('/gender', [GenderController::class, "store"])
+    ->name("gender.store");
 
-Route::put('/category/{id}', [CategoryController::class, "update"])
-    ->name("category.update");
+Route::put('/gender/{id}', [GenderController::class, "update"])
+    ->name("gender.update");
 
-Route::delete('/category/{id}', [CategoryController::class, "destroy"])
-    ->name("category.destroy");
+Route::delete('/gender/{id}', [GenderController::class, "destroy"])
+    ->name("gender.destroy");
 
 
-//GameCategory
-Route::get('/gamecategory', [GameCategoryController::class, "index"])
-    ->name("gamecategory.index");
-
-Route::get('/gamecategory/{id}', [GameCategoryController::class, "show"])
-    ->name("gamecategory.show");
-
-Route::post('/gamecategory', [GameCategoryController::class, "store"])
-    ->name("gamecategory.store");
-
-Route::put('/gamecategory/{id}', [GameCategoryController::class, "update"])
-    ->name("gamecategory.update");
-
-Route::delete('/gamecategory/{id}', [GameCategoryController::class, "destroy"])
-    ->name("gamecategory.destroy");
 
 
 //Game
@@ -81,22 +62,6 @@ Route::delete('/game/{id}', [GameController::class, "destroy"])
     ->name("game.destroy");
 
 
-//GameRank
-Route::get('/gamerank', [GameRankController::class, "index"])
-    ->name("gamerank.index");
-
-Route::get('/gamerank/{id}', [GameRankController::class, "show"])
-    ->name("gamerank.show");
-
-Route::post('/gamerank', [GameRankController::class, "store"])
-    ->name("gamerank.store");
-
-Route::put('/gamerank/{id}', [GameRankController::class, "update"])
-    ->name("gamerank.update");
-
-Route::delete('/gamerank/{id}', [GameRankController::class, "destroy"])
-    ->name("gamerank.destroy");
-
 
 //Goal
 Route::get('/goal', [GoalController::class, "index"])
@@ -115,23 +80,6 @@ Route::delete('/goal/{id}', [GoalController::class, "destroy"])
     ->name("goal.destroy");
 
 
-//Rank
-Route::get('/rank', [RankController::class, "index"])
-    ->name("rank.index");
-
-Route::get('/rank/{id}', [RankController::class, "show"])
-    ->name("rank.show");
-
-Route::post('/rank', [RankController::class, "store"])
-    ->name("rank.store");
-
-Route::put('/rank/{id}', [RankController::class, "update"])
-    ->name("rank.update");
-
-Route::delete('/rank/{id}', [RankController::class, "destroy"])
-    ->name("rank.destroy");
-
-
 //Server
 Route::get('/server', [ServerController::class, "index"])
     ->name("server.index");
@@ -144,36 +92,18 @@ Route::put('/server/{id}', [ServerController::class, "update"])
 
 
 
-//User
-Route::get('/user', [UserController::class, "index"])
-    ->name("user.index");
+//Searcher
+Route::get('/searcher', [SearcherController::class, "index"])
+    ->name("searcher.index");
 
-Route::get('/user/{id}', [UserController::class, "show"])
-    ->name("user.show");
+Route::get('/searcher/{id}', [SearcherController::class, "show"])
+    ->name("searcher.show");
 
-Route::post('/user', [UserController::class, "store"])
-    ->name("user.store");
+Route::post('/searcher', [SearcherController::class, "store"])
+    ->name("searcher.store");
 
-Route::put('/user/{id}', [UserController::class, "update"])
-    ->name("user.update");
+Route::put('/searcher/{id}', [SearcherController::class, "update"])
+    ->name("searcher.update");
 
-Route::delete('/user/{id}', [UserController::class, "destroy"])
-    ->name("user.destroy");
-
-
-//UserGames
-Route::get('/usergames', [UserGamesController::class, "index"])
-    ->name("usergames.index");
-
-Route::get('/usergames/{id}', [UserGamesController::class, "show"])
-    ->name("usergames.show");
-
-Route::post('/ususergameser', [UserGamesController::class, "store"])
-    ->name("usergames.store");
-
-Route::put('/usergames/{id}', [UserGamesController::class, "update"])
-    ->name("usergames.update");
-
-Route::delete('/usergames/{id}', [UserGamesController::class, "destroy"])
-    ->name("usergames.destroy");
-    
+Route::delete('/searcher/{id}', [SearcherController::class, "destroy"])
+    ->name("searcher.destroy");
