@@ -2,9 +2,9 @@
   <!-- Head -->
   <div class="head" id="home">
         <!-- Head Title -->
-        <a class="head-title" href="/">
+        <router-link class="head-title" to="/">
             MateFinder
-        </a>
+        </router-link>
 
         <!-- Head Nav -->
         <div class="head-nav">

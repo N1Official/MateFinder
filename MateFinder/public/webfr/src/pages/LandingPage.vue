@@ -11,11 +11,11 @@
 
             <div class="main-intro-sub">Join the thousands of gamers who have already discovered the benefits of using our platform to find their ideal gaming partners and make new friends.</div>
 
-            <a href="#">
+            <router-link to="/form">
                 Search for a Mate
                 
                 <img src="../assets/icons/arrow-turn-up-solid.svg" alt="up right arrow">
-            </a>
+            </router-link>
         </div>
 
         <!-- Main Features -->

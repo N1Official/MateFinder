@@ -7,9 +7,9 @@
             <div class="foot-content-top">
                 <!-- Foot Content Title -->
                 <div class="foot-content-title">
-                    <a href="/">
+                    <router-link to="/">
                         MateFinder
-                    </a>
+                    </router-link>
                 </div>
 
                 <!-- Foot Content Sbuscribe -->
