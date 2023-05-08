@@ -21,6 +21,15 @@ export const router = createRouter({
         title: 'Űrlap'
       }
     },
+    {
+        path: '/card',
+        name: 'card',
+        component: () => import('@/pages/Mates.vue'),
+        meta: {
+          requiresAuth: false,
+          title: 'Card'
+        }
+    },
   ]
 })
 

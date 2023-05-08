@@ -109,11 +109,11 @@
                     </div>
                     <div class="col-2" style="width: 0px;"></div>
                 </div>
-            </div>   
+            </div>
                 <div class="row">
                     <label class="form-label">Choose a game!</label>
                     <div class="my-3 games">
-                        
+
                         <div class="csgo col-3 mx-2" >
                             <label class="text-center">
                                 <input type="radio" name="game" value="csgo">
@@ -143,7 +143,9 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
+                        <router-link to="/card">
                         <button type="submit" class="btn btn-primary" style="font-size: 1.25rem;">Search!</button>
+                        </router-link>
                     </div>
                 </div>
             </form>
