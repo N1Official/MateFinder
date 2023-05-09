@@ -33,7 +33,4 @@
 </template>
 
 <script setup>
-function onChange(locale){
-    localStorage.setItem('locale',locale);
-}
 </script>
