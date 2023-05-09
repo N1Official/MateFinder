@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Searcher extends Model
 {
     protected $fillable = [
-        "username","profilelink","game_id","goal_id", "server_id", "gender_id",
+        "username","profilelink","avatar","game_id","goal", "server", "gender",
         "last_online",
     ];
 

@@ -27,10 +27,11 @@ class StoreSearcherRequest extends FormRequest
             "id" => "required",
             "username" => "required",
             "profilelink" => "required",
+            "avatar" => "required",
             "game_id" => "required",
-            "goal_id" => "required",
-            "server_id" => "required",
-            "gender_id" => "required",
+            "goal" => "required",
+            "server" => "required",
+            "gender" => "required",
             "last_online" => "required",
         ];
     }

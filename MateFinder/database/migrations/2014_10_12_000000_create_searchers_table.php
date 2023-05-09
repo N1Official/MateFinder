@@ -17,10 +17,11 @@ return new class extends Migration
             $table->id();
             $table->string('username');
             $table->string('profilelink');
+            $table->string('avatar');
             $table->integer('game_id');
-            $table->integer('goal_id');
-            $table->integer('server_id');
-            $table->integer('gender_id');
+            $table->string('goal');
+            $table->string('server');
+            $table->string('gender');
             $table->timestamp('last_online');
         });
     }

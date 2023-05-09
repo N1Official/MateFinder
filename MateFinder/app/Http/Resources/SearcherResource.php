@@ -18,10 +18,11 @@ class SearcherResource extends JsonResource
             "id" => $this->id,
             "username" => $this->username,
             "profilelink" => $this->profilelink,
+            "avatar" => $this->avatar,
             "game_id" => $this->game_id,
-            "goal_id" => $this->goal_id,
-            "server_id" => $this->server_id,
-            "gender_id" => $this->gender_id,
+            "goal" => $this->goal,
+            "server" => $this->server,
+            "gender" => $this->gender,
             "last_online" => $this->last_online,
         ];
     }
