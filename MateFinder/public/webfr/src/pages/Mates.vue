@@ -28,7 +28,7 @@
 </template>
 
 <script>
-
+import { http } from '../utils/http.mjs';
 
 export default{
 
