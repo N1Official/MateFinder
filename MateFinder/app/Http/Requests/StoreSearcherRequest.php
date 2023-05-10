@@ -13,7 +13,7 @@ class StoreSearcherRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,6 @@ class StoreSearcherRequest extends FormRequest
     public function rules()
     {
         return [
-            "id" => "required",
             "username" => "required",
             "profilelink" => "required",
             "avatar" => "required",

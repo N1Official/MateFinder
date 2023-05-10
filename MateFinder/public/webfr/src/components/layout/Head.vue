@@ -14,7 +14,7 @@
             <a href="#vision">Vision</a>
             <a href="#contact">Contact</a>
         </div>
-        
+
         <!-- Head Button -->
         <router-link class="head-button" to="/form">
             <span class="head-button">Search</span>
@@ -23,7 +23,7 @@
         <!-- Head Burgir -->
         <div class="head-burgir">
             <input type="checkbox" id="burgir">
-        
+
             <label for="burgir">
                 <div class="head-burgir-top"></div>
                 <div class="head-burgir-bot"></div>
