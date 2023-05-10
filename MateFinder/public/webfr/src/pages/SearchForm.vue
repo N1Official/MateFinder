@@ -142,12 +142,46 @@
                             </label>
                         </div>
                     </div>
+                </div>
+                <div class="row">
+                    <label class="form-label">Choose an avatar!</label>
+                    <div class="my-4 avatars">
+
+                        <div class="csgo col-3 mx-2" >
+                            <label class="text-center">
+                                <input type="radio" name="avatar" value="teso1">
+                                <img src="teso1.png" alt="teso1" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="lol col-3 mx-2">
+                            <label class="text-center">
+                                <input type="radio" name="avatar" value="teso2" >
+                                <img src="teso2.png" alt="teso2" class="img-fluid" >
+                                <br>
+                            </label>
+                        </div>
+                        <div class="forza col-3 mx-2">
+                            <label class="text-center">
+                                <input type="radio" name="avatar" value="teso3" >
+                                <img src="teso3.png" alt="teso3" class="img-fluid">
+                                <br>
+                            </label>
+                        </div>
+                        <div class="apex col-3 mx-2">
+                            <label class="text-center">
+                                <input type="radio" name="avatar" value="teso4">
+                                <img src="teso4.png" alt="teso4" class="img-fluid">
+                                <br>
+                            </label>
+                        </div>
+                    </div>
                     <div class="text-center mt-5">
                         <router-link to="/card">
                         <button type="submit" class="btn btn-primary" style="font-size: 1.25rem;">Search!</button>
                         </router-link>
                     </div>
                 </div>
+
             </form>
         </div>
    </div>
