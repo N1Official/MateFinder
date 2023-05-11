@@ -36,7 +36,7 @@
                         <div class="foot-content-contact-contacts-email">
                             support@matefinder.com
                         </div>
-    
+
                         <div class="foot-content-contact-contacts-phone">
                             +36 70 622 9262
                         </div>
@@ -48,7 +48,7 @@
                     <div class="foot-content-socials-title">
                         Socials
                     </div>
-                    
+
                     <div class="foot-content-socials-icons">
                         <a href="https://facebook.com/" target="_blank">
                             <img src="../../assets/icons/facebook-f.svg" alt="facebook">
