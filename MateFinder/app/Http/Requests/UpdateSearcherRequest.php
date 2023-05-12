@@ -24,8 +24,6 @@ class UpdateSearcherRequest extends FormRequest
     public function rules()
     {
         return [
-            "id" => "required",
-            "username" => "required",
             "profilelink" => "required",
             "avatar" => "required",
             "game_id" => "required",
