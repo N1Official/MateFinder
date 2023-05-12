@@ -16,9 +16,9 @@ class SearcherController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(/*$request*/)
     {
-       // $username = Searcher::firstWhere('username',Auth::user()->username);
+        //$username = Searcher::firstWhere('username',Auth::user()->username);
         $searchers = Searcher::all();//->where('game_id',$username->game_id)->where('goal',$username->goal)->where('server',$username->server);
         return SearcherResource::collection($searchers);
     }

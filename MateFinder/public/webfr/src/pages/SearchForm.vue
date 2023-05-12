@@ -22,13 +22,13 @@
                         <div class="mb-3 col-6">
                             <label for="gender" class="form-label">What's your gender?</label>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="male" value="male" v-model="gender">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="Male" v-model="gender">
                                 <label class="form-check-label" for="male">
                                     Male
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="female" value="female" v-model="gender">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="Female" v-model="gender">
                                 <label class="form-check-label" for="female">
                                     Female
                                 </label>
@@ -37,19 +37,19 @@
                         <div class="mb-3 col-6">
                             <label for="goal" class="form-label">What's your goal?</label>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="goal" id="fun" value="fun" v-model="goal">
+                                <input class="form-check-input" type="radio" name="goal" id="fun" value="Fun" v-model="goal">
                                 <label class="form-check-label" for="fun">
                                     Fun
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="goal" id="hobby" value="hobby" v-model="goal">
+                                <input class="form-check-input" type="radio" name="goal" id="hobby" value="Hobby" v-model="goal">
                                 <label class="form-check-label" for="hobby">
                                     Hobby
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="goal" id="competetive" value="competetive" v-model="goal">
+                                <input class="form-check-input" type="radio" name="goal" id="competetive" value="Competetive" v-model="goal">
                                 <label class="form-check-label" for="competetive">
                                     Competetive
                                 </label>
@@ -63,7 +63,7 @@
                     <div class="col-2 mx-2">
                         <div class="eu">
                             <label class="text-center">
-                                <input type="radio" name="server" value="eu" v-model="server">
+                                <input type="radio" name="server" value="EU" v-model="server">
                                 <img src="server.png" alt="eu" class="img-fluid">
                                 <br>EU
                             </label>
@@ -72,7 +72,7 @@
                     <div class="col-2 mx-2">
                         <div class="usa">
                             <label class="text-center">
-                                <input type="radio" name="server" value="usa" v-model="server">
+                                <input type="radio" name="server" value="USA" v-model="server">
                                 <img src="server.png" alt="usa" class="img-fluid">
                                 <br>USA
                             </label>
@@ -81,7 +81,7 @@
                     <div class="col-2 mx-2">
                         <div class="ru">
                             <label class="text-center">
-                                <input type="radio" name="server" value="russia" v-model="server">
+                                <input type="radio" name="server" value="Russia" v-model="server">
                                 <img src="server.png" alt="Russia" class="img-fluid">
                                 <br>Russia
                             </label>
@@ -90,7 +90,7 @@
                     <div class="col-2 mx-2">
                         <div class="asia">
                             <label class="text-center">
-                                <input type="radio" name="server" value="asia" v-model="server">
+                                <input type="radio" name="server" value="Asia" v-model="server">
                                 <img src="server.png" alt="Russia" class="img-fluid">
                                 <br>Asia
                             </label>
@@ -99,7 +99,7 @@
                     <div class="col-2 mx-2">
                         <div class="uk">
                             <label class="text-center">
-                                <input type="radio" name="server" value="uk" v-model="server">
+                                <input type="radio" name="server" value="UK" v-model="server">
                                 <img src="server.png" alt="Russia" class="img-fluid">
                                 <br>UK
                             </label>
@@ -213,6 +213,11 @@ data(){
         last_online:null,
     };
 },
+/*props: {
+    cruname: this.username,
+    crlink: this.profilelink,
+    crgame: this.game_id
+},*/
 methods:{
     async addSearcher(){
             let result = await axios.post("http://localhost:8881/api/searcher",{

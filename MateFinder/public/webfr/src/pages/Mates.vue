@@ -29,13 +29,28 @@ import {onMounted, reactive} from "vue";
 import {http} from "../utils/http.mjs";
 const searchers = reactive([]);
 async function getSearchers(){
-  const rawSearchers = await http.get('searcher');
-  for (const searcher of rawSearchers.data.data){
-    searchers.push(searcher);
-  }
+	const rawSearchers = await http.get('searcher'/*, {params:{
+		username:currentsearcher.username,
+		profilelink:currentsearcher.profilelink,
+		game_id:currentsearcher.game_id,
+	}}*/);
+  	for (const searcher of rawSearchers.data.data){
+   		searchers.push(searcher);
+  	}
 }
 onMounted(getSearchers);
-
+/*export default {
+  props: [username,profilelink,game_id],
+  data() {
+    return {
+      currentsearcher: {
+		username:this.username,
+		profilelink:this.profilelink,
+		game_id:this.game_id,
+	  }
+    }
+  },
+}*/
 </script>
 
 
