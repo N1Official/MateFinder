@@ -9,7 +9,7 @@ export const router = createRouter({
       component: () => import('@/pages/LandingPage.vue'),
       meta: {
         requiresAuth: false,
-        title: 'Főoldal'
+        title: 'Landing Page'
       }
     },
     {
@@ -18,7 +18,7 @@ export const router = createRouter({
       component: () => import('@/pages/SearchForm.vue'),
       meta: {
         requiresAuth: false,
-        title: 'Űrlap'
+        title: 'Searching'
       }
     },
     {
@@ -27,7 +27,7 @@ export const router = createRouter({
         component: () => import('@/pages/Mates.vue'),
         meta: {
           requiresAuth: false,
-          title: 'Card'
+          title: 'Mates'
         }
     },
   ]
