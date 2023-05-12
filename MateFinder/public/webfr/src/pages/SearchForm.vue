@@ -187,9 +187,16 @@
 
 <script>
 
+import {onMounted, reactive} from "vue";
+import {http} from "../utils/http.mjs";
+
+
+
+
 const year = new Date().getFullYear()
 const month = new Date().getMonth() + 1;
 const day = new Date().getDate()
+
 import axios from 'axios';
 import { VueElement } from 'vue';
 export default{
@@ -208,7 +215,7 @@ data(){
 },
 methods:{
     async addSearcher(){
-        let result = await axios.post("http://localhost:8881/api/searcher",{
+            let result = await axios.post("http://localhost:8881/api/searcher",{
             username:this.username,
             profilelink:this.profilelink,
             avatar:this.avatar,
@@ -219,8 +226,13 @@ methods:{
             last_online:year + '-' + month + '-' + day,
         });
         console.log(result);
-    },
+
+        },
 },
+
 };
+
+
+
 </script>
 
