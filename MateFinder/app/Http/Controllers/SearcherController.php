@@ -7,6 +7,7 @@ use App\Models\Searcher;
 use App\Http\Resources\SearcherResource;
 use App\Http\Requests\StoreSearcherRequest;
 use App\Http\Requests\UpdateSearcherRequest;
+use Illuminate\Support\Facades\Auth;
 
 class SearcherController extends Controller
 {
@@ -17,7 +18,8 @@ class SearcherController extends Controller
      */
     public function index()
     {
-        $searchers = Searcher::all();
+       // $username = Searcher::firstWhere('username',Auth::user()->username);
+        $searchers = Searcher::all();//->where('game_id',$username->game_id)->where('goal',$username->goal)->where('server',$username->server);
         return SearcherResource::collection($searchers);
     }
 
@@ -30,8 +32,19 @@ class SearcherController extends Controller
     public function store(StoreSearcherRequest $request)
     {
         $data = $request->validated();
-        $newSearcher = Searcher::create($data);
-        return new SearcherResource($newSearcher);
+        $username = Searcher::firstWhere('username',$data['username']);
+        if (!$username) {
+            $searcher = Searcher::create(
+                $data
+             );
+        }
+        else{
+            $searcher = $username->update(
+                $data
+            );
+        }
+
+        return new SearcherResource($searcher);
     }
 
     /**
@@ -46,21 +59,7 @@ class SearcherController extends Controller
         return new SearcherResource($searcher);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  App\Http\Requests\UpdateSearcherRequest  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateSearcherRequest  $request, $id)
-    {
-        $data = $request->validated();
-        $searcher = Searcher::findOrFail($id);
-        if ($searcher->update($data)) {
-            return new SearcherResource($searcher);
-        }
-    }
+
 
     /**
      * Remove the specified resource from storage.
