@@ -75,5 +75,55 @@ class SearcherSeeder extends Seeder
             'gender' => 'Female',
             'last_online' => '2023.05.05.',
         ]);
+        DB::table("searchers")->insert([
+            'username' => 'levi0415',
+            'profilelink' => 'https://s.team/p/cknc-rntw/HJVPDHKG',
+            'avatar' => 'teso1.png',
+            'game_id' => '1',
+            'goal' => 'Competetive',
+            'server' => 'EU',
+            'gender' => 'Male',
+            'last_online' => '2023.05.15.',
+        ]);
+        DB::table("searchers")->insert([
+            'username' => 'levi0415',
+            'profilelink' => 'https://www.facebook.com/levente.magyari.96',
+            'avatar' => 'teso2.png',
+            'game_id' => '2',
+            'goal' => 'Competetive',
+            'server' => 'EU',
+            'gender' => 'Male',
+            'last_online' => '2023.05.15.',
+        ]);
+        DB::table("searchers")->insert([
+            'username' => 'no office pls',
+            'profilelink' => 'https://steamcommunity.com/profiles/76561198121426783',
+            'avatar' => 'teso1.png',
+            'game_id' => '1',
+            'goal' => 'Competetive',
+            'server' => 'EU',
+            'gender' => 'Male',
+            'last_online' => '2023.05.15.',
+        ]);
+        DB::table("searchers")->insert([
+            'username' => 'Haintor',
+            'profilelink' => 'https://steamcommunity.com/profiles/76561198440460827',
+            'avatar' => 'teso1.png',
+            'game_id' => '2',
+            'goal' => 'Competetive',
+            'server' => 'EU',
+            'gender' => 'Male',
+            'last_online' => '2023.05.15.',
+        ]);
+        DB::table("searchers")->insert([
+            'username' => 'Dyerex',
+            'profilelink' => 'https://steamcommunity.com/profiles/76561198121426783',
+            'avatar' => 'teso2.png',
+            'game_id' => '2',
+            'goal' => 'Competetive',
+            'server' => 'EU',
+            'gender' => 'Male',
+            'last_online' => '2023.05.15.',
+        ]);
     }
 }
