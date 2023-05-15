@@ -1,0 +1,229 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Gép: db
+-- Létrehozás ideje: 2023. Máj 15. 23:22
+-- Kiszolgáló verziója: 8.0.30
+-- PHP verzió: 8.0.18
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Adatbázis: `laravel`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `failed_jobs`
+--
+
+CREATE TABLE `failed_jobs` (
+  `id` bigint UNSIGNED NOT NULL,
+  `uuid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `connection` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `failed_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `game`
+--
+
+CREATE TABLE `game` (
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- A tábla adatainak kiíratása `game`
+--
+
+INSERT INTO `game` (`id`, `name`) VALUES
+(1, 'Counter-Strike:Global Offensive'),
+(2, 'Leauge of Legends'),
+(3, 'Apex Legends'),
+(4, 'Forza');
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `migrations`
+--
+
+CREATE TABLE `migrations` (
+  `id` int UNSIGNED NOT NULL,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- A tábla adatainak kiíratása `migrations`
+--
+
+INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+(1, '2014_10_12_000000_create_searchers_table', 1),
+(2, '2014_10_12_100000_create_password_resets_table', 1),
+(3, '2019_08_19_000000_create_failed_jobs_table', 1),
+(4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
+(5, '2023_03_26_170000_create_game_table', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `password_resets`
+--
+
+CREATE TABLE `password_resets` (
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `personal_access_tokens`
+--
+
+CREATE TABLE `personal_access_tokens` (
+  `id` bigint UNSIGNED NOT NULL,
+  `tokenable_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tokenable_id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `abilities` text COLLATE utf8mb4_unicode_ci,
+  `last_used_at` timestamp NULL DEFAULT NULL,
+  `expires_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `searchers`
+--
+
+CREATE TABLE `searchers` (
+  `id` bigint UNSIGNED NOT NULL,
+  `username` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `profilelink` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `avatar` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `game_id` int NOT NULL,
+  `goal` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `server` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `gender` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `last_online` timestamp NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- A tábla adatainak kiíratása `searchers`
+--
+
+INSERT INTO `searchers` (`id`, `username`, `profilelink`, `avatar`, `game_id`, `goal`, `server`, `gender`, `last_online`) VALUES
+(1, 'N1Official', 'https://www.facebook.com/NiGhtMaRRRRRRRe/', 'teso1.png', 1, 'Competetive', 'EU', 'Male', '2023-05-05 00:00:00'),
+(2, 'xXxKillerxXx', 'https://steamcommunity.com/id/Drinkcyanide', 'teso2.png', 2, 'Hobby', 'EU', 'Male', '2023-05-02 00:00:00'),
+(3, 'OP-x-PO', 'https://steamcommunity.com/id/Drinkcyanide', 'teso2.png', 1, 'Competetive', 'EU', 'Male', '2023-05-05 00:00:00'),
+(4, 'LykentS', 'https://www.facebook.com/NiGhtMaRRRRRRRe/', 'teso1.png', 2, 'Competetive', 'EU', 'Male', '2023-05-05 00:00:00'),
+(5, 'PeterKate', 'https://steamcommunity.com/id/0mis', 'teso3.png', 1, 'Competetive', 'EU', 'Female', '2023-05-05 00:00:00'),
+(6, 'Jessycax', 'https://steamcommunity.com/id/0mis', 'teso3.png', 2, 'Competetive', 'EU', 'Female', '2023-05-05 00:00:00'),
+(7, 'Pikachu', 'https://s.team/p/cknc-rntw/HJVPDHKG', 'teso1.png', 1, 'Competetive', 'EU', 'Male', '2023-05-15 00:00:00'),
+(8, 'levi0415', 'https://www.facebook.com/levente.magyari.96', 'teso2.png', 2, 'Competetive', 'EU', 'Male', '2023-05-15 00:00:00'),
+(9, 'no office pls', 'https://steamcommunity.com/profiles/76561198121426783', 'teso1.png', 1, 'Competetive', 'EU', 'Male', '2023-05-15 00:00:00'),
+(10, 'Haintor', 'https://steamcommunity.com/profiles/76561198440460827', 'teso1.png', 2, 'Competetive', 'EU', 'Male', '2023-05-15 00:00:00'),
+(11, 'Dyerex', 'https://steamcommunity.com/profiles/76561198121426783', 'teso2.png', 2, 'Competetive', 'EU', 'Male', '2023-05-15 00:00:00'),
+(12, 'LeonardoXantus212', 'facebook.com', 'teso2.png', 4, 'Competetive', 'EU', 'Male', '2023-05-16 00:00:00');
+
+--
+-- Indexek a kiírt táblákhoz
+--
+
+--
+-- A tábla indexei `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
+
+--
+-- A tábla indexei `game`
+--
+ALTER TABLE `game`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- A tábla indexei `migrations`
+--
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- A tábla indexei `password_resets`
+--
+ALTER TABLE `password_resets`
+  ADD KEY `password_resets_email_index` (`email`);
+
+--
+-- A tábla indexei `personal_access_tokens`
+--
+ALTER TABLE `personal_access_tokens`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
+  ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
+
+--
+-- A tábla indexei `searchers`
+--
+ALTER TABLE `searchers`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- A kiírt táblák AUTO_INCREMENT értéke
+--
+
+--
+-- AUTO_INCREMENT a táblához `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT a táblához `game`
+--
+ALTER TABLE `game`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT a táblához `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT a táblához `personal_access_tokens`
+--
+ALTER TABLE `personal_access_tokens`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT a táblához `searchers`
+--
+ALTER TABLE `searchers`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+DELIMITER $$
+--
+-- Események
+--
+CREATE DEFINER=`laravel`@`%` EVENT `SearcherDel` ON SCHEDULE EVERY 30 MINUTE STARTS '2023-05-11 13:35:34' ON COMPLETION PRESERVE ENABLE DO DELETE FROM searchers WHERE searchers.last_online < DATE_SUB(NOW(), INTERVAL 14 DAY) AND NOW()$$
+
+DELIMITER ;
+COMMIT;

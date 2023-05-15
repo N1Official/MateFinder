@@ -36,7 +36,7 @@ class SearcherSeeder extends Seeder
             'last_online' => '2023.05.02.',
         ]);
         DB::table("searchers")->insert([
-            'username' => 'xXxKillerxXx',
+            'username' => 'OP-x-PO',
             'profilelink' => 'https://steamcommunity.com/id/Drinkcyanide',
             'avatar' => 'teso2.png',
             'game_id' => '1',
@@ -46,7 +46,7 @@ class SearcherSeeder extends Seeder
             'last_online' => '2023.05.05.',
         ]);
         DB::table("searchers")->insert([
-            'username' => 'N1Official',
+            'username' => 'LykentS',
             'profilelink' => 'https://www.facebook.com/NiGhtMaRRRRRRRe/',
             'avatar' => 'teso1.png',
             'game_id' => '2',
@@ -66,7 +66,7 @@ class SearcherSeeder extends Seeder
             'last_online' => '2023.05.05.',
         ]);
         DB::table("searchers")->insert([
-            'username' => 'PeterKate',
+            'username' => 'Jessycax',
             'profilelink' => 'https://steamcommunity.com/id/0mis',
             'avatar' => 'teso3.png',
             'game_id' => '2',
@@ -76,7 +76,7 @@ class SearcherSeeder extends Seeder
             'last_online' => '2023.05.05.',
         ]);
         DB::table("searchers")->insert([
-            'username' => 'levi0415',
+            'username' => 'Pikachu',
             'profilelink' => 'https://s.team/p/cknc-rntw/HJVPDHKG',
             'avatar' => 'teso1.png',
             'game_id' => '1',

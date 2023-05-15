@@ -1,0 +1,987 @@
+{
+  "id": "81661a3b-4ada-42b5-85db-54b7543995bf",
+  "version": "3.0",
+  "name": "New Project",
+  "url": "http://www.google.com",
+  "urls": [
+    "http://www.google.com"
+  ],
+  "plugins": [],
+  "suites": [
+    {
+      "id": "03531a1a-752e-44cd-8214-7f30f6db7623",
+      "name": "New Suite",
+      "parallel": false,
+      "persistSession": false,
+      "tests": [
+        "d7685a80-006b-46b3-9343-f9fe6e8f9fda"
+      ],
+      "timeout": 30000
+    }
+  ],
+  "tests": [
+    {
+      "id": "d7685a80-006b-46b3-9343-f9fe6e8f9fda",
+      "name": "Navigation",
+      "commands": [
+        {
+          "command": "open",
+          "target": "http://localhost:5174/",
+          "value": "",
+          "id": "34cf4a3b-36ef-4e9f-88c0-456b195a903a",
+          "isBreakpoint": true
+        },
+        {
+          "command": "click",
+          "target": "linkText=Home",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "e68b42ca-77c0-4329-bd0c-8c535ed5e9be",
+          "targets": [
+            [
+              "linkText=Home",
+              "linkText"
+            ],
+            [
+              "css=.head-nav > .router-link-active",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Home')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='home']/div/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/')])[2]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Home')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Features",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "0f12db72-3e38-492d-885b-23e7ce20b703",
+          "targets": [
+            [
+              "linkText=Features",
+              "linkText"
+            ],
+            [
+              "css=.head-nav > a:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Features')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='home']/div/a[2])[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '#features')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Features')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=About",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "e06cde94-7474-4ce7-a213-08fe8d3df02a",
+          "targets": [
+            [
+              "linkText=About",
+              "linkText"
+            ],
+            [
+              "css=.head-nav > a:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'About')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='home']/div/a[3])[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '#about')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'About')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Vision",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "2b055b33-68f5-4344-9188-aa18b87e67a4",
+          "targets": [
+            [
+              "linkText=Vision",
+              "linkText"
+            ],
+            [
+              "css=a:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Vision')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='home']/div/a[4])[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '#vision')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Vision')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Contact",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "47d18508-36be-472c-a127-fbfcc834f2f3",
+          "targets": [
+            [
+              "linkText=Contact",
+              "linkText"
+            ],
+            [
+              "css=a:nth-child(5)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Contact')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='home']/div/a[5])[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '#contact')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Contact')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bb89b967-a681-4eb4-be74-6be522ff729b",
+      "name": "CTA Button",
+      "commands": [
+        {
+          "id": "2ccd9792-612d-431a-8ba4-64191946e15f",
+          "command": "open",
+          "target": "http://localhost:5174/",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "linkText=Search for a Mate",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "3a3f7602-d31d-43f9-9d52-551fa6f91ab3",
+          "targets": [
+            [
+              "linkText=Search for a Mate",
+              "linkText"
+            ],
+            [
+              "css=.main-intro > a",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Search for a Mate')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/form')])[2]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Search for a Mate')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8ab8ac3f-93b4-4554-9830-b9df1b58c84e",
+      "name": "Form",
+      "commands": [
+        {
+          "id": "9f8947d4-46f9-4d47-95fb-d11b50097de6",
+          "command": "open",
+          "target": "http://localhost:5174/",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "linkText=Search for a Mate",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "fc206646-82c8-41a1-b969-3400847ee1b7",
+          "targets": [
+            [
+              "linkText=Search for a Mate",
+              "linkText"
+            ],
+            [
+              "css=.main-intro > a",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Search for a Mate')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/form')])[2]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Search for a Mate')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "mouseOver",
+          "target": "linkText=Search for a Mate",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "7ec8d43f-e59c-4440-8657-63c2b12e3b72",
+          "targets": [
+            [
+              "linkText=Search for a Mate",
+              "linkText"
+            ],
+            [
+              "css=.main-intro > a",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Search for a Mate')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/form')])[2]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Search for a Mate')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=profile-link",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "74e305b7-4456-473e-abfd-31c3e8bc230c",
+          "targets": [
+            [
+              "id=profile-link",
+              "id"
+            ],
+            [
+              "css=#profile-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='profile-link'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "id=profile-link",
+          "value": "facebook.com",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "831c3fe6-6549-4354-ad1e-ede0e52d979c",
+          "targets": [
+            [
+              "id=profile-link",
+              "id"
+            ],
+            [
+              "css=#profile-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='profile-link'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=username",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "0922c13e-f345-4f47-b979-92ff9033fc3a",
+          "targets": [
+            [
+              "id=username",
+              "id"
+            ],
+            [
+              "css=#username",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='username'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div/div[2]/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "id=username",
+          "value": "MrHigh",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "6d7268f2-54b2-4f30-8d9f-278944660217",
+          "targets": [
+            [
+              "id=username",
+              "id"
+            ],
+            [
+              "css=#username",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='username'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div/div[2]/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.mb-3:nth-child(1) > .form-check:nth-child(2) > .form-check-label",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "bfbab907-6bb2-451d-901d-4407ff4fe640",
+          "targets": [
+            [
+              "css=.mb-3:nth-child(1) > .form-check:nth-child(2) > .form-check-label",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div[2]/div/div/label)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//label[contains(.,'Male')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.mb-3:nth-child(2) > .form-check:nth-child(3) > .form-check-label",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "bcbea6cb-e204-464d-8880-f8892c734961",
+          "targets": [
+            [
+              "css=.mb-3:nth-child(2) > .form-check:nth-child(3) > .form-check-label",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div[2]/div[2]/div[2]/label)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//label[contains(.,'Hobby')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.eu .img-fluid",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "9cc2128b-6abd-4adf-af74-c2e0829309d7",
+          "targets": [
+            [
+              "css=.eu .img-fluid",
+              "css:finder"
+            ],
+            [
+              "xpath=(//img[@alt='eu'])[1]",
+              "xpath:img"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div[2]/div/div/div/label/img)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.my-3 > .csgo .img-fluid",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "44480f34-4df2-493c-8db9-bc55bf13cb50",
+          "targets": [
+            [
+              "css=.my-3 > .csgo .img-fluid",
+              "css:finder"
+            ],
+            [
+              "xpath=(//img[@alt='csgo'])[1]",
+              "xpath:img"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div[3]/div/div/label/img)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.my-4 > .lol .img-fluid",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "b2369a47-0b0d-40aa-99ea-ebf38fa64ac3",
+          "targets": [
+            [
+              "css=.my-4 > .lol .img-fluid",
+              "css:finder"
+            ],
+            [
+              "xpath=(//img[@alt='teso2'])[1]",
+              "xpath:img"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div[4]/div/div[2]/label/img)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.btn",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "6d13dc3d-d4b8-4ab1-8743-19d008c9c5f2",
+          "targets": [
+            [
+              "css=.btn",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()='Search!'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div[4]/div[2]/a/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Search!')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2ae7a0d-a58f-4597-b8d0-acd373c131e0",
+      "name": "Finding Mates",
+      "commands": [
+        {
+          "id": "4bfce3cd-f1d0-482f-87fd-b33e3ba75a3b",
+          "command": "open",
+          "target": "http://localhost:5174/",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "linkText=Search for a Mate",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "5ad688fe-8425-40c9-8eda-011bd6223270",
+          "targets": [
+            [
+              "linkText=Search for a Mate",
+              "linkText"
+            ],
+            [
+              "css=.main-intro > a",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Search for a Mate')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/form')])[2]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Search for a Mate')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=profile-link",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "254f7f5f-fc43-45ce-abe8-534607e1174b",
+          "targets": [
+            [
+              "id=profile-link",
+              "id"
+            ],
+            [
+              "css=#profile-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='profile-link'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "id=profile-link",
+          "value": "facebook.com",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "c938975c-c9a3-4127-9e8c-cdd67df3bffb",
+          "targets": [
+            [
+              "id=profile-link",
+              "id"
+            ],
+            [
+              "css=#profile-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='profile-link'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=username",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "ab7ec49c-bae9-4575-b0e2-bf28d236ff29",
+          "targets": [
+            [
+              "id=username",
+              "id"
+            ],
+            [
+              "css=#username",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='username'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div/div[2]/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "id=username",
+          "value": "LeonardoXantus212",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "d0775f4f-2bcc-45c8-b94d-463f5bb0815a",
+          "targets": [
+            [
+              "id=username",
+              "id"
+            ],
+            [
+              "css=#username",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='username'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div/div[2]/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.mb-3:nth-child(1) > .form-check:nth-child(2) > .form-check-label",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "d7081870-4a85-4ed3-adc1-02594fac464e",
+          "targets": [
+            [
+              "css=.mb-3:nth-child(1) > .form-check:nth-child(2) > .form-check-label",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div[2]/div/div/label)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//label[contains(.,'Male')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.form-check:nth-child(4) > .form-check-label",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "ba63670f-5522-4838-9a71-ec652b7da850",
+          "targets": [
+            [
+              "css=.form-check:nth-child(4) > .form-check-label",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div/div[2]/div[2]/div[3]/label)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//label[contains(.,'Competetive')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.eu .img-fluid",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "7fa9f008-8420-4caf-aed0-b74f471450d4",
+          "targets": [
+            [
+              "css=.eu .img-fluid",
+              "css:finder"
+            ],
+            [
+              "xpath=(//img[@alt='eu'])[1]",
+              "xpath:img"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div[2]/div/div/div/label/img)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.my-3 > .forza .img-fluid",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "6c90ece8-2907-4a3c-bab8-408d2cc0059d",
+          "targets": [
+            [
+              "css=.my-3 > .forza .img-fluid",
+              "css:finder"
+            ],
+            [
+              "xpath=(//img[@alt='forza'])[1]",
+              "xpath:img"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div[3]/div/div[3]/label/img)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.my-4 > .lol .img-fluid",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "0e327974-99f1-42bb-b6a7-ffcfe81a58e7",
+          "targets": [
+            [
+              "css=.my-4 > .lol .img-fluid",
+              "css:finder"
+            ],
+            [
+              "xpath=(//img[@alt='teso2'])[1]",
+              "xpath:img"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div[4]/div/div[2]/label/img)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.btn",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "68bd7641-4fd4-4fd1-ad1f-e7a6c93eb711",
+          "targets": [
+            [
+              "css=.btn",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()='Search!'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div/form/div[4]/div[2]/a/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Search!')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "storeWindowHandle",
+          "id": "0000-0000-0000-0000",
+          "target": "root",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "linkText=Profile",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "9d5909df-76d4-453f-a2b7-6ff0e9088982",
+          "targets": [
+            [
+              "linkText=Profile",
+              "linkText"
+            ],
+            [
+              "css=.card:nth-child(9) li:nth-child(1) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Profile')])[9]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div[9]/ul/li/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, 'https://steamcommunity.com/profiles/76561198121426783')])[1]",
+              "xpath:href"
+            ]
+          ],
+          "opensWindow": true,
+          "windowHandleName": "win3305",
+          "windowTimeout": 2000
+        },
+        {
+          "id": "6b844f29-e536-4c1d-91a6-675e0a777a9b",
+          "command": "selectWindow",
+          "target": "handle=${win3305}",
+          "value": ""
+        },
+        {
+          "id": "f51cec62-c7f1-4464-a137-cb55ec5f4c1a",
+          "command": "selectWindow",
+          "target": "handle=${root}",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "linkText=Profile",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "34020e28-fd03-4b51-aa1b-6cda4fbb8eb4",
+          "targets": [
+            [
+              "linkText=Profile",
+              "linkText"
+            ],
+            [
+              "css=.card:nth-child(11) li:nth-child(1) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Profile')])[11]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//div[@id='app']/div[2]/div[11]/ul/li/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, 'https://steamcommunity.com/profiles/76561198121426783')])[2]",
+              "xpath:href"
+            ]
+          ],
+          "opensWindow": true,
+          "windowHandleName": "win3257",
+          "windowTimeout": 2000
+        },
+        {
+          "id": "adac7638-45b4-47f9-9ed2-0cecd38b1106",
+          "command": "selectWindow",
+          "target": "handle=${win3257}",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "snapshot": {
+    "dependencies": {},
+    "tests": [],
+    "jest": {
+      "extraGlobals": []
+    }
+  }
+}
