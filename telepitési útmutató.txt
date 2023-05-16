@@ -1,0 +1,36 @@
+Telepitési útmutató:
+
+Amire szükség van a backend részhez:
+-git bash
+-docker
+
+1. elősször cloneoljuk le a projektet
+-> git clone https://github.com/N1Official/MateFinder
+
+2. inditsuk el a dockert
+
+3. git bashen keresztül lépjünk be a megfelelő mappába
+ha például az asztalra cloneoltunk 
+-> cd Desktop\MateFinder\MateFinder
+
+4. futassuk a ./start.sh-t
+-> ./start.sh
+
+5. Ezután git bash-ben nyissuk meg a projektet
+-> code .
+
+6. Nyissuk meg a terminált visual studio codeban majd irjuk be a kövezkező parancsokat:
+-> docker compose exec app fish
+-> composer install
+-> npm install
+-> php artisan key:generate
+
+Innentől kezdve teljes mértékben tudjuk használni a backendet
+
+7.Ahhoz, hogy elinditsuk a weboldalt a következőket kell tenni
+-> docker compose exec app fish(ha még nem vagyunk ott)
+-> cd public/webfr/
+-> npm run dev
+
+
+
